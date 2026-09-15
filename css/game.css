@@ -1,0 +1,90 @@
+.game-ui { position: absolute; top: 20px; text-align: center; width: 100%; z-index: 10; pointer-events: none;}
+#game-area { width: 100vw; height: 100vh; position: relative; overflow: hidden; cursor: none; /* গেম খেলার সময় মাউস পয়েন্টার হাইড থাকবে */ }
+
+.heart-target { position: absolute; font-size: 40px; animation: fall 4s linear; user-select: none; pointer-events: none; }
+@keyframes fall { from { top: -50px; } to { top: 100vh; } }
+
+/* ট্রে বা ঝুড়ির ডিজাইন */
+#tray {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    z-index: 15;
+    pointer-events: none; /* মাউসের সাথে সহজে ঘোরার জন্য */
+}
+
+#final-message { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.8); padding: 30px 20px; border-radius: 20px; text-align: center; border: 2px solid #ff416c; z-index: 20;width: 90%; max-width: 400px; }
+#final-message h1 { color: #ff416c;margin-bottom: 10px; }
+/* ক্যালেন্ডার সেকশনের ডিজাইন */
+.date-picker-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px dashed #ff416c;
+}
+
+.date-picker-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cute-date-input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #ff416c;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cute-date-input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff416c;
+}
+/* Submit বাটনের ডিজাইন */
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.5);
+}
+
+/* Have a good day লেখার ডিজাইন */
+.huge-text {
+    font-size: 60px; /* লেখাটা বিশাল বড় দেখাবে */
+    color: #ffd700; /* সুন্দর সোনালী রং */
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+    animation: popUp 1s ease-in-out;
+}
+
+@keyframes popUp {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+/* শুধু মোবাইলের জন্য স্পেশাল ডিজাইন */
+@media (max-width: 600px) {
+    #final-message h1 { font-size: 24px; }
+    #final-message p { font-size: 14px; }
+    .date-picker-container p { font-size: 16px; }
+    .cute-date-input { width: 100%; } /* ক্যালেন্ডারটা পুরো জায়গা নেবে */
+}

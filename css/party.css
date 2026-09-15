@@ -1,0 +1,10 @@
+.question-container { text-align: center; z-index: 10; position: relative;}
+h2 { margin-bottom: 30px; font-size: 2rem;}
+.btn-group { display: flex; gap: 20px; justify-content: center; align-items: center; position: relative; height: 100px;}
+#btnYes { background: #28a745; font-size: 1.2rem; }
+#btnNo { background: #dc3545; position: absolute; font-size: 1.2rem; transition: all 0.2s ease;}
+.go-game { background: #ffc107; color: #000; margin-top: 20px; }
+#celebration h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
