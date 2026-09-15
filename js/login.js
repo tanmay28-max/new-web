@@ -3,7 +3,7 @@ document.getElementById('loginBtn').addEventListener('click', function() {
     const errorMsg = document.getElementById('error-msg');
     
     // Set your birthday date password here (e.g., 14092026)
-    if(pass === "10032006") {
+    if(pass === "28082009") {
         errorMsg.classList.add('hidden');
         document.querySelector('.login-container').classList.add('fade-out');
         document.querySelector('.lock-icon').innerText = '🔓';
