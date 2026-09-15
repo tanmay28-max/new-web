@@ -16,4 +16,4 @@ document.getElementById('loginBtn').addEventListener('click', function() {
         document.querySelector('.login-container').style.animation = "none";
         setTimeout(() => document.querySelector('.login-container').style.animation = "shake 0.5s", 10);
     }
-});
+}); 
