@@ -15,7 +15,7 @@ document.getElementById('balloon').addEventListener('click', function() {
         });
 
         setTimeout(() => {
-            window.location.href = "wish.html";
+            window.location.href = "surprise.html";
         }, 2500);
     }, 800);
 });
